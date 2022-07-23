@@ -1,0 +1,41 @@
+# 每行的最大宽度
+max_width = 100
+# 使用制表符对齐缩进
+hard_tabs = false
+# 每个制表符的空格数
+tab_spaces = 4
+# 换行样式会在每个文件的基础上自动检测, "Auto", "Native", "Unix"(\n), "Windows"(\r\n)
+newline_style = "Auto"
+# 简化粒度宽度配置 "Default", "Off", "Max"
+use_small_heuristics = "Default"
+# fn_call_width = 60
+# attr_fn_like_width = 70
+# struct_lit_width = 18
+# struct_variant_width = 35
+# array_width = 60
+# chain_width = 60
+# single_line_if_else_max_width = 50
+# 删除嵌套的括号
+remove_nested_parens = true
+# 数组宽度每个元素阈值
+short_array_element_width_threshold = 10
+# 
+match_arm_leading_pipes = "Never"
+# 函数参数的布局
+fn_args_layout = "Tall"
+# match 块结尾分号
+match_block_trailing_comma = false
+# Cargo.toml如果通过 Cargo 的格式化工具执行，
+# Rustfmt 能够通过读取文件来获取使用的版本cargo fmt。
+# 否则，需要在配置文件中指定版本
+edition = "2021"
+# 
+merge_derives = true
+# 
+use_try_shorthand = false
+# 
+use_field_init_shorthand = false
+# 始终打印外部项目的 abi
+force_explicit_abi = true
+# 此选项将来可能会被软弃用。
+disable_all_formatting = false
