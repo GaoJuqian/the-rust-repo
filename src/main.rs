@@ -11,7 +11,10 @@ fn main() {
 
         io::stdin().read_line(&mut input_num).expect("用户输入");
 
-        let input_num: u32 = input_num.trim().parse().expect("err");
+        let input_num: u32 = match input_num.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue,
+        };
 
         match input_num.cmp(&rand_num) {
             Ordering::Less => println!("Too small!"),
