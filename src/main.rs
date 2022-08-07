@@ -1,21 +1,13 @@
 // use rand::Rng;
 // use std::cmp::Ordering;
 // use std::io;
-
-const CONST_PI:f32 = 3.14;
+// const CONST_PI:f32 = 3.14;
+mod day_2;
 
 fn main() {
-    day2()
+    day_2::test_1()
 }
 
-fn day2() {
-    let a = 1;
-    println!("{a}{CONST_PI}");
-    let mut a = 2;
-    println!("{a}");
-    a = 123;
-    println!("{a}");
-}
 
 // fn day1() {
 //     let rand_num = rand::thread_rng().gen_range(1..=100);
