@@ -5,7 +5,7 @@
 mod day_2;
 
 fn main() {
-    day_2::test_1()
+    day_2::test_1([1,2,3,4,5], 5);
 }
 
 
