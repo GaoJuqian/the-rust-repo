@@ -5,7 +5,9 @@
 mod day_2;
 
 fn main() {
-    day_2::test_1([1,2,3,4,5], 5);
+    let value = day_2::test_1([1,2,3,4,5], 5);
+
+    println!("{value}");
 }
 
 
