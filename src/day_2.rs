@@ -1,4 +1,4 @@
-pub fn test_1(_arr: [usize; 5], len: u8) -> &'static str {
+pub fn test(_arr: [usize; 5], len: u8) -> &'static str {
     // 函数行参类型固定
     println!("{len}");
 

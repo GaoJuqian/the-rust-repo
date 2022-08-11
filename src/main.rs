@@ -3,11 +3,15 @@
 // use std::io;
 // const CONST_PI:f32 = 3.14;
 mod day_2;
+mod day_3;
+
 
 fn main() {
-    let value = day_2::test_1([1,2,3,4,5], 5);
+    // let value = day_2::test_1([1,2,3,4,5], 5);
 
-    println!("{value}");
+    // println!("{value}");
+    day_3::test();
+
 }
 
 
