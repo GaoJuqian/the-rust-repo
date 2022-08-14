@@ -7,7 +7,7 @@ pub fn test(){
     let  _b = _a.clone() + "456";
     println!("{}", format!("{_a},{_b}"));
 
-    // (实现copy trait) 存储栈 -> 拷贝
+    // 存储栈 -> 拷贝
     let _c = ("a", "b");
     let _d = _c;
     println!("{}", format!("{_c:#?}"));
