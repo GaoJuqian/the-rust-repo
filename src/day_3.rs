@@ -23,7 +23,6 @@ pub fn test() {
 
     // 可修改引用
 
-    
     // err
     // let _g: &mut String = &mut _f;
     // let _f: &mut String = &mut _f;
@@ -35,6 +34,12 @@ pub fn test() {
     let _f: &mut String = &mut _f;
     println!("{_f}");
 
+    // 获取单词slice
+    let _h = String::from("hello  world");
+    let word_slice = get_first_word(&_h);
+    // 不允许再次可变， slice不可变引用
+    // _h.clear();
+    println!("word slice = {word_slice}");
     
 }
 
@@ -45,4 +50,15 @@ fn get_length(item: &String) -> usize {
 fn edit_str(item: &mut String) -> usize {
     item.push_str(", push");
     item.len()
+}
+
+fn get_first_word(str: &String) -> &str {
+    let bytes = str.as_bytes();
+    for idx in 0..bytes.len() {
+        // 字节的字面值语法来寻找代表空格的字节
+        if bytes[idx] == b' ' {
+            return &str[0..idx];
+        }
+    }
+    &str[..]
 }
