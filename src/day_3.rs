@@ -52,7 +52,7 @@ fn edit_str(item: &mut String) -> usize {
     item.len()
 }
 
-fn get_first_word(str: &String) -> &str {
+fn get_first_word(str: &str) -> &str {
     let bytes = str.as_bytes();
     for idx in 0..bytes.len() {
         // 字节的字面值语法来寻找代表空格的字节
